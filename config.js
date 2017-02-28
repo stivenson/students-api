@@ -4,7 +4,7 @@ var config = {
     },
     routes: {
       cors: {
-        origin: ['*'] // change for production
+        origin: ['*'] // default
       }
     }
   };
