@@ -1,4 +1,13 @@
-var config = {};
+var config = {
+    server: {
+      port: process.env.PORT || 3000
+    },
+    routes: {
+      cors: {
+        origin: ['https://students-client.herokuapp.com','*'] // change for production
+      }
+    }
+  };
 /*
  *  Config for different environments
  */
