@@ -1,4 +1,9 @@
 'use strict';
+
+/*
+ *  Operations about students (For this test only one, list)
+ */
+
 var fs = require('fs');
 var Student = {};
 

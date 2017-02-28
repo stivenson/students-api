@@ -1,4 +1,7 @@
 var config = {};
+/*
+ *  Config for different environments
+ */
 if (process.env.NODE_ENV == 'pro') {
   config = {
     server: {

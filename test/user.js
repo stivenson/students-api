@@ -4,8 +4,8 @@ let code = require('code');
 let server = require('../app')
 
 /*
-  Tests about RestFul students endpoints 
-*/
+ *  Tests about RestFul students endpoints 
+ */
 
 lab.experiment('Test for Student RESTFUL services', () => {
   lab.test('GET students', (done) => {

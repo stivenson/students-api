@@ -1,5 +1,7 @@
 var student = require('./students.js');
-
+/*
+ *  Routes (RESTFUL) about students (For this test only one)
+ */
 exports.init = function (server) {
   
   server.route({
