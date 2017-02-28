@@ -4,7 +4,7 @@ var config = {
     },
     routes: {
       cors: {
-        origin: ['https://students-client.herokuapp.com','*'] // change for production
+        origin: ['*'] // change for production
       }
     }
   };
@@ -18,7 +18,7 @@ if (process.env.NODE_ENV == 'pro') {
     },
     routes: {
       cors: {
-        origin: ['https://students-client.herokuapp.com','*'] // change for production
+        origin: ['https://students-client.herokuapp.com'] // change for production
       }
     }
   }
