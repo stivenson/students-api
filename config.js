@@ -10,7 +10,7 @@ if (process.env.NODE_ENV == 'pro') {
     },
     routes: {
       cors: {
-        origin: ['https://students-client.herokuapp.com'] // change for production
+        origin: ['https://students-client.herokuapp.com','*'] // change for production
       }
     }
   }
