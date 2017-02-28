@@ -10,7 +10,7 @@ if (process.env.NODE_ENV == 'pro') {
     },
     routes: {
       cors: {
-        origin: ['http://0.0.0.0:8080'] // change for production
+        origin: ['http://0.0.0.0:8080','http://localhost:8080'] // change for production
       }
     }
   }
@@ -23,7 +23,7 @@ if (process.env.NODE_ENV == 'dev' || !process.env.NODE_ENV) {
     },
     routes: {
       cors: {
-        origin: ['http://0.0.0.0:8080'] 
+        origin: ['http://0.0.0.0:8080','http://localhost:8080'] 
       }
     }
   }
@@ -36,7 +36,7 @@ if (process.env.NODE_ENV == 'test') {
     },
     routes: {
       cors: {
-        origin: ['http://0.0.0.0:8080'] // change for test
+        origin: ['http://0.0.0.0:8080','http://localhost:8080'] // change for test
       }
     }
   }
