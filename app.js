@@ -5,7 +5,7 @@ process.env.NODE_ENV = 'pro'; // optional use or npm startproduction
 
 var server = new hapi.Server()
 server.connection({ 
-  host: config.server.host,
+//  host: config.server.host,
   port: config.server.port,
   routes: config.routes
 })
