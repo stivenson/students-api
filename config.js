@@ -5,12 +5,12 @@ var config = {};
 if (process.env.NODE_ENV == 'pro') {
   config = {
     server: {
-      host: 'localhost', // change for production server
+      host: 'https://students-api.herokuapp.com', // change for production server
       port: process.env.PORT || 3000,
     },
     routes: {
       cors: {
-        origin: ['http://0.0.0.0:8080','http://localhost:8080'] // change for production
+        origin: ['https://students-client.herokuapp.com'] // change for production
       }
     }
   }
