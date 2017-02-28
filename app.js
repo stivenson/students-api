@@ -6,7 +6,8 @@ var hapi = require('hapi')
 var server = new hapi.Server()
 server.connection({ 
   host: config.server.host,
-  port: config.server.port
+  port: config.server.port,
+  routes: config.routes
 })
 
 var routes = require('./students_routes')

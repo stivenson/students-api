@@ -9,7 +9,7 @@ exports.init = function (server) {
       reply({
         statusCode: 0,
         list: JSON.parse(student.getList()).students
-      })
+      }).header('Content-Type','application/json, text/plain, */*')
     }
   })
 

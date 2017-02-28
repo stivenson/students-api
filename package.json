@@ -1,7 +1,7 @@
 {
   "name": "students-api",
   "version": "1.0.0",
-  "description": "Proyecto de prueba para Cuemby",
+  "description": "Api de proyecto de prueba para Cuemby",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",

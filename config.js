@@ -2,8 +2,13 @@ var config = {};
 if (process.env.NODE_ENV == 'pro') {
   config = {
     server: {
-      host: 'localhost',
-      port: process.env.PORT || 3000
+      host: 'localhost', // change for production server
+      port: process.env.PORT || 3000,
+    },
+    routes: {
+      cors: {
+        origin: ['http://0.0.0.0:8080'] // change for production
+      }
     }
   }
 }
@@ -12,15 +17,25 @@ if (process.env.NODE_ENV == 'dev' || !process.env.NODE_ENV) {
     server: {
       host: 'localhost',
       port: process.env.PORT || 3010
+    },
+    routes: {
+      cors: {
+        origin: ['http://0.0.0.0:8080'] 
+      }
     }
   }
 }
 if (process.env.NODE_ENV == 'test') {
   config = {
     server: {
-      host: 'localhost',
+      host: 'localhost', // change for test server
       port: process.env.PORT || 3020
     },
+    routes: {
+      cors: {
+        origin: ['http://0.0.0.0:8080'] // change for test
+      }
+    }
   }
 }
 
