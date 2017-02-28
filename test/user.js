@@ -3,7 +3,11 @@ let lab = exports.lab = Lab.script()
 let code = require('code');
 let server = require('../app')
 
-lab.experiment('Test for Student RESTFUL services', () {
+/*
+  Tests about RestFul students endpoints 
+*/
+
+lab.experiment('Test for Student RESTFUL services', () => {
   lab.test('GET students', (done) => {
     let options = {
       method: 'GET',
