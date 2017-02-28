@@ -5,10 +5,10 @@ exports.init = function (server) {
   server.route({
     method: 'GET',
     path: '/students',
-    handler: function (request, reply) {
+    handler: (request, reply) => {
       reply({
         statusCode: 0,
-        list: JSON.parse(student.getList()).students
+        list: student.getList()
       }).header('Content-Type','application/json, text/plain, */*')
     }
   })

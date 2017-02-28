@@ -3,22 +3,31 @@ let lab = exports.lab = Lab.script()
 let code = require('code');
 let server = require('../app')
 
-lab.experiment('Test for Student RESTFUL services', function() {
-  
-  lab.test('GET students', function(done) {
+lab.experiment('Test for Student RESTFUL services', () {
+  lab.test('GET students', (done) => {
     let options = {
       method: 'GET',
       url: '/students'
     }
-    server.inject(options, function(response) {
+    server.inject(options, (response) => {
       let result = response.result
       code.expect(response.statusCode).to.equal(200)
       code.expect(result.statusCode).to.equal(0)
       done()
     })
   })
+})
 
-  /* Others test for all crud operations of students
+
+
+
+
+
+
+
+
+
+/* Others test for all crud operations of students
 
     lab.test('GET students/:id', function(done) {
       let options = {
@@ -111,6 +120,3 @@ lab.experiment('Test for Student RESTFUL services', function() {
       })
     })
   */
-
-
-})

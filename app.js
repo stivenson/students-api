@@ -13,9 +13,7 @@ server.connection({
 var routes = require('./students_routes')
 routes.init(server, config)
 
-server.start(function () {
-  console.log('Server now run for: ', server.info.uri);
-});
+server.start(() => {console.log('Server now run for: ', server.info.uri)});
 
 if (module.parent) {
   console.log("Call module")
